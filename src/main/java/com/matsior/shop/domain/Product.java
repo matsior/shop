@@ -9,17 +9,15 @@ import java.math.BigDecimal;
 
 @Getter
 @Entity
-@Table(name = "products")
+@Table(name = "product_details")
 @NoArgsConstructor
 public class Product extends GeneratedId {
 
   private String name;
 
-  private BigDecimal price;
-
   public Product(final Integer id, final String name, final BigDecimal price) {
     super(id);
     this.name = name;
-    this.price = price;
   }
+
 }

@@ -18,7 +18,7 @@ public class OrderProduct extends GeneratedId {
   private Order order;
 
   @ManyToOne
-  @JoinColumn(name = "product_id")
+  @JoinColumn(name = "product_details_id")
   private Product product;
 
   private Integer quantity;
